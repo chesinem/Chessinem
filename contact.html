@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHESSINEM | Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">♟ CHESSINEM</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section>
+
+    <div class="section-title">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Let's talk about chess or web development.
+        </p>
+
+    </div>
+
+    <div class="contact-box">
+
+        <form onsubmit="sendMessage(event)">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button class="btn" type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        ♟ © 2026 <span>Reub Lhiam Sales</span> |
+        Personal Chess Website
+    </p>
+</footer>
+
+<script>
+
+function sendMessage(event) {
+
+    event.preventDefault();
+
+    alert("Thank you for your message!");
+
+    event.target.reset();
+
+}
+
+</script>
+
+</body>
+</html>

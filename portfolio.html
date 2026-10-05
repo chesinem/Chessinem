@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHESSINEM | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">♟ CHESSINEM</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section>
+
+    <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My chess interests and projects.</p>
+    </div>
+
+    <div class="portfolio">
+
+        <div class="project">
+            <div class="project-icon">♟</div>
+
+            <h3>Chess Puzzles</h3>
+
+            <p>
+                Solving tactical positions helps me recognize
+                patterns and improve calculation.
+            </p>
+        </div>
+
+        <div class="project">
+            <div class="project-icon">♞</div>
+
+            <h3>Game Analysis</h3>
+
+            <p>
+                Analyzing games helps me understand tactics,
+                strategy, mistakes, and better decisions.
+            </p>
+        </div>
+
+        <div class="project">
+            <div class="project-icon">💻</div>
+
+            <h3>Chess Website</h3>
+
+            <p>
+                A web development project combining my passion
+                for chess with HTML, CSS, and JavaScript.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="play">
+
+    <div class="section-title">
+
+        <h2>Play Chess</h2>
+
+        <p id="game-description">
+            Challenge the computer or play against a friend.
+        </p>
+
+    </div>
+
+    <div class="game-panel">
+
+        <p>Choose game mode:</p>
+
+        <div class="controls">
+
+            <button
+                id="computerMode"
+                class="active"
+                onclick="setGameMode('computer')">
+                Player vs Computer
+            </button>
+
+            <button
+                id="pvpMode"
+                onclick="setGameMode('pvp')">
+                2 Players
+            </button>
+
+        </div>
+
+        <div id="computerOptions">
+
+            <p>Choose your color:</p>
+
+            <div class="controls">
+
+                <button
+                    id="white"
+                    class="active"
+                    onclick="setPlayerColor('w')">
+                    White
+                </button>
+
+                <button
+                    id="black"
+                    onclick="setPlayerColor('b')">
+                    Black
+                </button>
+
+            </div>
+
+            <p>Choose your difficulty:</p>
+
+            <div class="controls">
+
+                <button
+                    id="easy"
+                    onclick="setDifficulty('easy')">
+                    Easy
+                </button>
+
+                <button
+                    id="medium"
+                    class="active"
+                    onclick="setDifficulty('medium')">
+                    Medium
+                </button>
+
+                <button
+                    id="hard"
+                    onclick="setDifficulty('hard')">
+                    Hard
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="status" id="status">
+            Your turn — White
+        </div>
+
+    </div>
+
+    <div class="board-wrapper">
+        <div class="board" id="board"></div>
+    </div>
+
+    <button class="btn" onclick="newGame()">
+        New Game
+    </button>
+
+</section>
+
+<footer>
+    <p>
+        ♟ © 2026 <span>Reub Lhiam Sales</span> |
+        Personal Chess Website
+    </p>
+</footer>
+
+<script  src="game.js"></script>
+
+</body>
+</html>
