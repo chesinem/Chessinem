@@ -1,91 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CHESSINEM | Contact</title>
 <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<nav>
+</head><body><nav>
     <div class="nav-container">
-        <div class="logo">♟ CHESSINEM</div>
+        <div class="logo">♟ CHESSINEM</div>    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+</nav><section><div class="section-title">
 
-<section>
+    <h2>Contact Me</h2>
 
-    <div class="section-title">
+    <p>
+        Let's talk about chess or web development.
+    </p>
 
-        <h2>Contact Me</h2>
+</div>
 
-        <p>
-            Let's talk about chess or web development.
-        </p>
+<div class="contact-box">
 
-    </div>
+    <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
 
-    <div class="contact-box">
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+        >
 
-        <form onsubmit="sendMessage(event)">
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+        >
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required
-            >
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required
-            >
+        <input type="hidden" name="_subject" value="New Message from CHESSINEM Website">
 
-            <textarea
-                placeholder="Your Message"
-                required
-            ></textarea>
+        <input type="hidden" name="_captcha" value="true">
 
-            <button class="btn" type="submit">
-                Send Message
-            </button>
+        <button class="btn" type="submit">
+            Send Message
+        </button>
 
-        </form>
+    </form>
 
-    </div>
+</div>
 
-</section>
-
-<footer>
+</section><footer>
     <p>
         ♟ © 2026 <span>Reub Lhiam Sales</span> |
         Personal Chess Website
     </p>
-</footer>
-
-<script>
-
-function sendMessage(event) {
-
-    event.preventDefault();
-
-    alert("Thank you for your message!");
-
-    event.target.reset();
-
-}
-
-</script>
-
-</body>
+</footer></body>
 </html>
